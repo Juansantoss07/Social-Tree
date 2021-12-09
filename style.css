@@ -22,18 +22,19 @@ div.box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 div.perfil{
     height: 40%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 div.photo{
-    height: 70%;
-    width: 35%;
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
     background-image: url(assets/woman-gced63599c_640.jpg);
     background-repeat: round;
@@ -51,7 +52,7 @@ div.links{
 }
 
 div.links a{
-    width: 100%;
+    width: 350px;
     height: 100%;
 }
 
@@ -75,5 +76,18 @@ div.icons{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 350px;
 }
 
+@media(max-width:330px){
+    div.links a{
+        width: 250px;
+    }
+    div.icons{
+        width: 250px;
+    }
+    div.photo{
+        width: 100px;
+        height:100px;
+    }
+}
